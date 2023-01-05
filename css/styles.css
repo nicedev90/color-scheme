@@ -558,6 +558,10 @@ video {
   width: 33.333333%;
 }
 
+.w-1\/5 {
+  width: 20%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -620,6 +624,11 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-white {
