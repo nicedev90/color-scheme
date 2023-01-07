@@ -1,5 +1,8 @@
 package.json
 package-lock.json
-/node_modules
+# ignorar folder y contenido i.e  folder1/
+# ignorar todos los folder con mismo nombre solo colocar nombre: folder1
+# ignorar archivos markdown ->  *.md
+node_modules
 tailwind.config.js
 input.css
