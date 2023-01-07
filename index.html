@@ -11,38 +11,39 @@
 	<div class="container max-w-4xl mx-auto">
 		<h3 class="text-center font-bold text-xl py-3">Diseño UX - Regla 60-30-10</h3>
 		<section id="design" class="flex flex-col p-2 md:space-x-4 md:flex-row md:justify-around">
-			
+				
+				<!-- columna izquierda, selector de color -->
 				<div id="color-picker" class="flex flex-col md:w-96 space-y-2 py-2">
 
 					<div class="flex w-full justify-between px-6">
-						<button id="btn-load" class="bg-info p-2 rounded-full">Mostrar esquema</button>
+						<button id="btn-load" class="bg-primary hover:bg-primaryLight text-white p-2 rounded-xl">Mostrar esquema</button>
 					</div>
 
-					<div class="flex w-full">
+					<div class="flex w-full border">
 						<div id="neutral" class="w-3/5 p-4">Neutral</div>
 						<div id="primary" class="w-1/4 p-4">Primary</div>
 						<div id="cta" class="w-1/6 p-4">CTA</div>
 					</div>
 
-					<div class="flex p-1 w-full justify-between space-x-4 bg-light">
+					<div class="flex p-1 w-full justify-between space-x-4 bg-neutral">
 						<h3 class="text-center font-bold py-2 w-2/6">Color Neutral</h3>
-						<p id="hex-color" class="w-24 p-2 text-center"></p>
-						<button id="btn-color" class="w-2/6 p-2 rounded-xl bg-warning">Seleccionar</button>
+						<p id="hex-color" class="w-24 p-2 text-center border"></p>
+						<button id="btn-color" class="w-2/6 p-2 rounded-xl bg-cta hover:bg-ctaDark">Seleccionar</button>
 					</div>
 
-					<div class="flex p-1 w-full justify-between space-x-4 bg-light">
+					<div class="flex p-1 w-full justify-between space-x-4 bg-neutral">
 						<h3 class="text-center font-bold py-2 w-2/6">Color Primario</h3>
-						<p id="hex-color" class="w-24 p-2 text-center"></p>
-						<button id="btn-color" class="w-2/6 p-2 rounded-xl bg-warning">Seleccionar</button>
+						<p id="hex-color" class="w-24 p-2 text-center border"></p>
+						<button id="btn-color" class="w-2/6 p-2 rounded-xl bg-cta hover:bg-ctaDark">Seleccionar</button>
 					</div>
 
-					<div class="flex p-1 w-full justify-between space-x-4 bg-light">
+					<div class="flex p-1 w-full justify-between space-x-4 bg-neutral">
 						<h3 class="text-center font-bold py-2 w-2/6">Color CTA</h3>
-						<p id="hex-color" class="w-24 p-2 text-center"></p>
-						<button id="btn-color" class="w-2/6 p-2 rounded-xl bg-warning">Seleccionar</button>
+						<p id="hex-color" class="w-24 p-2 text-center border"></p>
+						<button id="btn-color" class="w-2/6 p-2 rounded-xl bg-cta hover:bg-ctaDark">Seleccionar</button>
 					</div>
 
-					<div id="gradient" class="hidden flex flex-col p-2 w-full justify-between bg-light">
+					<div id="gradient" class="hidden flex flex-col p-2 w-full justify-between bg-neutral">
 						<div id="colors" class="w-full p-1">faf</div>
 						<div id="colors" class="w-full p-1">faf</div>
 						<div id="colors" class="w-full p-1">faf</div>
@@ -56,6 +57,7 @@
 					
 				</div>
 
+				<!-- columna derecha, cargar imagen -->
 				<div class="md:w-96 flex flex-col">
 					<canvas id="preview" class="outline outline-2"></canvas>
 					<input id="img-input" type="file">

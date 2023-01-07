@@ -152,8 +152,8 @@ function hexToHSL(hex) {
   l = +(l * 100).toFixed(1)
 
   let normal = "hsl(" + h + "," + s + "%," + l + "%)"
-  let light = "hsl(" + h + "," + s + "%," + (l+10).toFixed(1) + "%)"
-  let dark = "hsl(" + h + "," + s + "%," + (l-20).toFixed(1) + "%)"
+  let light = "hsl(" + h + "," + s + "%," + (l+8).toFixed(1) + "%)"
+  let dark = "hsl(" + h + "," + s + "%," + (l-12).toFixed(1) + "%)"
   let scheme = {
     normal : normal,
     light : light,
